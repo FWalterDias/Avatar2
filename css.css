@@ -6,7 +6,6 @@ body{
     grid-template-areas:  "header"
                           "main"
                           "footer";
-    border: solid 2px red;
     background: linear-gradient(to bottom,#b6c3a3, #5fe0f5,#04285c,#042455);
     display: flex;
     flex-direction: column;
@@ -40,12 +39,21 @@ main{
 section > h2{
     font-size: 3em;
     margin-bottom: 0;
-    padding-left: 20%;
+    padding-left: 300px;
 }
 #content{
     display: flex;
-    padding-left: 20%;
-    border-bottom: black solid 2px;
+    padding-left: 300px;
+}
+section:nth-child(1) > #content{
+    border-bottom: 2px solid #5fe1f579;
+}
+section:nth-child(2) > #content{
+    border-bottom: 2px solid #04285c;
+}
+section:nth-child(3) > #content{
+    border-bottom: 2px solid #031d44;
+    border-opa
 }
 #content > figure {
     margin-right: 0;
@@ -53,10 +61,18 @@ section > h2{
 #content > figure > img{
     width: 960px;
 }
+section:nth-child(1) > #content > figure > img{
+    width: 560px;
+}
 footer{
     grid-area: footer;
     /*background-color: #042455;*/
-    margin-bottom: 1%;
+}
+footer > h1{
+    text-align: center;
+    text-decoration: underline;
+    color: aliceblue;
+    font-size: 3em;
 }
 h5{
     text-align: center;
