@@ -53,7 +53,6 @@ section:nth-child(2) > #content{
 }
 section:nth-child(3) > #content{
     border-bottom: 2px solid #031d44;
-    border-opa
 }
 #content > figure {
     margin-right: 0;
